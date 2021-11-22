@@ -8,6 +8,7 @@ public class Client
 	private String nomClient;
 	private Facture uneFacture;
 	private ArrayList<Facture> factures=new ArrayList<>();
+	private static ArrayList<Client> clients = new ArrayList<>();
 	/** 
 	 * Crée un client.
 	 * @param nom le nom du client. 
@@ -50,6 +51,7 @@ public class Client
 	{
 		Facture myFacture  = new Facture(montant,this,reglementFacture);
 		factures.add(myFacture);
+		clients.add(this);
 		return myFacture;
 	}
 	
@@ -89,6 +91,7 @@ public class Client
 	{
 		Facture myFacture  = new Facture(montant,this,false);
 		factures.add(myFacture);
+		clients.add(this);
 		return createFacture(montant, false);
 	}	
 	
@@ -109,7 +112,12 @@ public class Client
 	 */
 	public static List<Client> tous()
 	{
-		return null;
+		ArrayList<Client> lesClients = new ArrayList<>();
+		for(int i =0;i<clients.size();i++)
+		{
+			lesClients.add(clients.get(i));
+		}
+		return lesClients;
 	}
 	
 	/**
