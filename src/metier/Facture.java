@@ -6,7 +6,7 @@ public class Facture
 {
 	private int numFacture=0;
 	private int montantFacture;
-	private String dateFacture;
+	private LocalDate dateFacture;
 	private Boolean reglementFacture;
 	/**
 	 * Retourne le client à qui est adressée la facture..
@@ -16,7 +16,7 @@ public class Facture
 	public Facture(int montant) {
 		numFacture = numFacture+1;
 		montantFacture=montant;
-		dateFacture = "--/--/----";
+		dateFacture = LocalDate.now();
 		reglementFacture=false;
 	}
 	
