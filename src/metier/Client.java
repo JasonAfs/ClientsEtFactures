@@ -46,9 +46,9 @@ public class Client
 	 */
 	
 	
-	public Facture createFacture(int montant,boolean reglementFacture)
+	public Facture createFacture(int montant,boolean reglementFactur)
 	{
-		Facture myFacture  = new Facture(montant,this,reglementFacture);
+		Facture myFacture  = new Facture(montant,this,reglementFactur);
 		return myFacture;
 	}
 	
