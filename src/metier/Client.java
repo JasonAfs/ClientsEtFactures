@@ -81,7 +81,7 @@ public class Client
 	
 	public Facture createFacture(int montant, boolean reglee)
 	{
-		numFacture = numFacture + 1;
+		
 		return null;
 	}	
 	
