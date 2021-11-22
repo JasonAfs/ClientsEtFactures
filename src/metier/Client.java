@@ -59,7 +59,8 @@ public class Client
 	public List<Facture> getFactures()
 	{
 		ArrayList<Facture> lesFactures = new ArrayList<Facture>();
-		for(int i =0;i<factures.size();i++){
+		for(int i =0;i<factures.size();i++)
+		{
 			lesFactures.add(factures.get(i));
 		}
 		return lesFactures;
