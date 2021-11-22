@@ -8,12 +8,14 @@ public class Facture
 	private int montantFacture;
 	private LocalDate dateFacture;
 	private Boolean reglementFacture;
+	private Client client;
 	/**
 	 * Retourne le client à qui est adressée la facture..
 	 * @return le client.
 	 */
 	
-	public Facture(int montant) {
+	public Facture(int montant,Client client) {
+		this.client=client;
 		montantFacture=montant;
 		dateFacture = LocalDate.now();
 		reglementFacture=false;
@@ -21,7 +23,7 @@ public class Facture
 	
 	public Client getClient()
 	{
-		return null;
+		return client ;
 	}
 
 	/**
@@ -69,6 +71,7 @@ public class Facture
 	
 	public Facture copie()
 	{
-		return null;
+		
+		return  ;
 	}
 }
