@@ -7,7 +7,7 @@ public class Client
 {
 	private String nomClient;
 	private Facture uneFacture;
-	private ArrayList<Facture> factures;
+	private ArrayList<Facture> factures=new ArrayList();
 	/** 
 	 * Crée un client.
 	 * @param nom le nom du client. 
@@ -46,9 +46,9 @@ public class Client
 	 */
 	
 	
-	public Facture createFacture(int montant,boolean reglementFactur)
+	public Facture createFacture(int montant,boolean reglementFacture)
 	{
-		Facture myFacture  = new Facture(montant,this,reglementFactur);
+		Facture myFacture  = new Facture(montant,this,reglementFacture);
 		factures.add(myFacture);
 		return myFacture;
 	}
