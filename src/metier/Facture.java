@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Facture
 {
-	private int numFacture=0;
+	
 	private int montantFacture;
 	private LocalDate dateFacture;
 	private Boolean reglementFacture;
@@ -14,7 +14,7 @@ public class Facture
 	 */
 	
 	public Facture(int montant) {
-		numFacture = numFacture+1;
+		
 		montantFacture=montant;
 		dateFacture = LocalDate.now();
 		reglementFacture=false;
