@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Client
 {
+	private int numClient=0;
 	private String nomClient;
 	private Facture uneFacture;
 	/** 
