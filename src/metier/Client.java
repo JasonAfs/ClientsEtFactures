@@ -45,9 +45,10 @@ public class Client
 	 * @return la facture créée.
 	 */
 	
-	public Facture createFacture(int montant)
+	
+	public Facture createFacture(int montant,boolean reglementFacture)
 	{
-		Facture myFacture  = new Facture(montant,this);
+		Facture myFacture  = new Facture(montant,this,reglementFacture);
 		return myFacture;
 	}
 	
@@ -83,10 +84,10 @@ public class Client
 	 * @return la facture créée.
 	 */
 	
-	public Facture createFacture(int montant, boolean reglee)
+	public Facture createFacture(int montant)
 	{
 		
-		return null;
+		return createFacture(montant, false);
 	}	
 	
 	/**

@@ -13,7 +13,12 @@ public class Facture
 	 * Retourne le client à qui est adressée la facture..
 	 * @return le client.
 	 */
-	
+	public Facture (int montant,Client client,boolean reglementFacture) {
+		this.client=client;
+		montantFacture=montant;
+		dateFacture = LocalDate.now();
+		this.reglementFacture=reglementFacture;
+	}
 	public Facture(int montant,Client client) {
 		this.client=client;
 		montantFacture=montant;
@@ -43,11 +48,7 @@ public class Facture
 	
 	public boolean estReglee()
 	{
-		if (reglementFacture == true) {
-			return true;
-			}else {
-				return false;
-				}
+		return reglementFacture;
 		
 	}
 
