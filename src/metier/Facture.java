@@ -33,7 +33,7 @@ public class Facture
 	
 	public int getMontant()
 	{
-		return 0;
+		return montantFacture;
 	}
 
 	/**
@@ -53,7 +53,7 @@ public class Facture
 	
 	public LocalDate getDate()
 	{
-		return null;
+		return dateFacture;
 	}
 
 	/**
