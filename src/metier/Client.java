@@ -64,7 +64,7 @@ public class Client
 		for(int i =0;i<factures.size();i++){
 			lesFactures.add(factures.get(i));
 		}
-		return null;
+		return lesFactures;
 	}
 	
 	/**
