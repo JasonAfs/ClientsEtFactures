@@ -14,7 +14,6 @@ public class Facture
 	 */
 	
 	public Facture(int montant) {
-		
 		montantFacture=montant;
 		dateFacture = LocalDate.now();
 		reglementFacture=false;
