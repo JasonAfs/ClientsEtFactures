@@ -16,7 +16,6 @@ public class Client
 	public Client(String nom)
 	{
 		nomClient = nom;
-		numClient=numClient + 1;
 		
 	}
 
