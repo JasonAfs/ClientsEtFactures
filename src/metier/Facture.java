@@ -4,10 +4,20 @@ import java.time.LocalDate;
 
 public class Facture
 {
+	
+	private int montantFacture;
+	private String dateFacture;
+	private Boolean reglementFacture;
 	/**
 	 * Retourne le client à qui est adressée la facture..
 	 * @return le client.
 	 */
+	
+	public Facture(int montant) {
+		montantFacture=montant;
+		dateFacture = "--/--/----";
+		reglementFacture=false;
+	}
 	
 	public Client getClient()
 	{

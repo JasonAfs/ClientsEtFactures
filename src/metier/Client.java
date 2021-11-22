@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Client
 {
-	private int numClient;
 	private String nomClient;
+	private Facture uneFacture;
 	/** 
 	 * Crée un client.
 	 * @param nom le nom du client. 
@@ -47,7 +47,8 @@ public class Client
 	
 	public Facture createFacture(int montant)
 	{
-		return null;
+		Facture myFacture  = new Facture(montant);
+		return myFacture;
 	}
 	
 	/**
@@ -79,6 +80,7 @@ public class Client
 	
 	public Facture createFacture(int montant, boolean reglee)
 	{
+		numFacture = numFacture + 1;
 		return null;
 	}	
 	
