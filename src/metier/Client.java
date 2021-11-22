@@ -26,7 +26,7 @@ public class Client
 	
 	public String getNom()
 	{
-		return null;
+		return nomClient;
 	}
 	
 	/**
@@ -36,6 +36,7 @@ public class Client
 	
 	public void setNom(String nom)
 	{
+		nomClient=nom;
 	}
 	
 	/**
