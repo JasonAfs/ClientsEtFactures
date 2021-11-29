@@ -17,7 +17,7 @@ public class Client
 	public Client(String nom)
 	{
 		nomClient = nom;
-		clients.add(Client);
+		clients.add(this);
 		
 	}
 
