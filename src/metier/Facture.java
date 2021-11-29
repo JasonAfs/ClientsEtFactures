@@ -13,18 +13,19 @@ public class Facture
 	/**
 	 * Retourne le client à qui est adressée la facture..
 	 * @return le client.
+	 * @throws Exception
 	 */
-	public Facture (int montant,Client client,boolean reglementFacture) {
+	public Facture (int montant,Client client,boolean reglementFacture) throws Exception {
+		if(montant<0){
+			throw(new Exception("Le montant d'une facture ne peut pas être négatif."));
+		}
 		this.client=client;
 		montantFacture=montant;
 		dateFacture = LocalDate.now();
 		this.reglementFacture=reglementFacture;
 	}
 	public Facture(int montant,Client client) {
-		this.client=client;
-		montantFacture=montant;
-		dateFacture = LocalDate.now();
-		reglementFacture=false;
+		this(montant,client,false);
 	}
 	
 	public Client getClient()
