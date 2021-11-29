@@ -125,6 +125,6 @@ public class Client
 	
 	public void delete()
 	{
-		 clients.delete(this);
+		 clients.remove(this);
 	}
 }
