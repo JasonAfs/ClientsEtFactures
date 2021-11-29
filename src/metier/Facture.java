@@ -69,6 +69,7 @@ public class Facture
 	
 	public void delete()
 	{
+		client.getFactures().remove(this);
 	}
 	
 	/**
@@ -78,6 +79,6 @@ public class Facture
 	
 	public Facture copie()
 	{
-		return this;
+		return this.;
 	}
 }
