@@ -69,7 +69,7 @@ public class Facture
 	
 	public void delete()
 	{
-		getClient().getFactures().remove(this);
+		this.getClient().getFactures().remove(this);
 	}
 	
 	/**
