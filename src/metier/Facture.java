@@ -2,7 +2,8 @@ package metier;
 
 import java.time.LocalDate;
 
-public class Facture
+
+public class Facture 
 {
 	
 	private int montantFacture;
@@ -77,6 +78,6 @@ public class Facture
 	
 	public Facture copie()
 	{
-		return this;
+		return ;
 	}
 }

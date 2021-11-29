@@ -17,6 +17,7 @@ public class Client
 	public Client(String nom)
 	{
 		nomClient = nom;
+		clients.add(this);
 		
 	}
 
@@ -51,7 +52,6 @@ public class Client
 	{
 		Facture myFacture  = new Facture(montant,this,reglementFacture);
 		factures.add(myFacture);
-		clients.add(this);
 		return myFacture;
 	}
 	
