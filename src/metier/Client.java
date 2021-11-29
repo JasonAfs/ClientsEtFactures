@@ -50,10 +50,8 @@ public class Client
 	
 	public Facture createFacture(int montant,boolean reglementFacture)
 	{
-		if (montant>=0){
-			Facture myFacture  = new Facture(montant,this,reglementFacture);
+		Facture myFacture  = new Facture(montant,this,reglementFacture);
 		factures.add(myFacture);
-		}
 		return myFacture;
 	}
 	
