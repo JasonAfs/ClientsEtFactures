@@ -51,7 +51,7 @@ public class Client
 	 */
 	
 	
-	public Facture createFacture(int montant,boolean reglementFacture)
+	public Facture createFacture(int montant,boolean reglementFacture)throws Exception
 	{
 		Facture myFacture  = new Facture(montant,this,reglementFacture);
 		factures.add(myFacture);
