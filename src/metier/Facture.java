@@ -78,6 +78,6 @@ public class Facture
 	public Facture copie()
 	{
 		
-		return new Facture(getMontant(), getClient(), estReglee())  ;
+		return new Facture(this.getMontant(), this.getClient(), this.estReglee())  ;
 	}
 }
