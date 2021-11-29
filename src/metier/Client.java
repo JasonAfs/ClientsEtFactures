@@ -20,7 +20,7 @@ public class Client
 		clients.add(this);
 		
 	}
-	public List<Facture> getFactures(){
+	public List<Facture> agetFactures(){
 		return factures;
 	}
 
