@@ -7,8 +7,8 @@ public class Client
 {
 	private String nomClient;
 	private Facture uneFacture;
-	private ArrayList<Facture> factures=new ArrayList<>();
-	private static ArrayList<Client> clients = new ArrayList<>();
+	private List<Facture> factures=new ArrayList<>();
+	private static List<Client> clients = new ArrayList<>();
 	/** 
 	 * Crée un client.
 	 * @param nom le nom du client. 
@@ -62,7 +62,7 @@ public class Client
 
 	public List<Facture> getFactures()
 	{
-		ArrayList<Facture> lesFactures = new ArrayList<Facture>();
+		List<Facture> lesFactures = new ArrayList<Facture>();
 		for(int i =0;i<factures.size();i++)
 		{
 			lesFactures.add(factures.get(i));
@@ -112,7 +112,7 @@ public class Client
 	 */
 	public static List<Client> tous()
 	{
-		ArrayList<Client> lesClients = new ArrayList<>();
+		List<Client> lesClients = new ArrayList<>();
 		for(int i =0;i<clients.size();i++)
 		{
 			lesClients.add(clients.get(i));
