@@ -24,7 +24,7 @@ public class Facture
 		dateFacture = LocalDate.now();
 		this.reglementFacture=reglementFacture;
 	}
-	public Facture(int montant,Client client) {
+	public Facture(int montant,Client client) throws Exception {
 		this(montant,client,false);
 	}
 	
