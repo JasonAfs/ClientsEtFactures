@@ -111,7 +111,7 @@ public class Client
 				FacturesReglees.add(factures.get(i));
 			}
 		} 
-		return FactureReglees;
+		return FacturesReglees;
 	}
 	
 
