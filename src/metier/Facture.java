@@ -79,6 +79,6 @@ public class Facture
 	
 	public Facture copie()
 	{
-		return this.;
+		return null;
 	}
 }
