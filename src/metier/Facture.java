@@ -79,7 +79,7 @@ public class Facture
 	
 	public Facture copie()
 	{
-		Facture copieFacture = new Facture(this.getMontant(), this.getClient());
+		Facture copieFacture = new Facture(this.getMontant(), this.getClient(),this.estReglee());
 		return copieFacture;
 	}
 }
