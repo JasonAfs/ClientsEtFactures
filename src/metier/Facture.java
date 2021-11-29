@@ -78,6 +78,6 @@ public class Facture
 	
 	public Facture copie()
 	{
-		return null;
+		return this;
 	}
 }
