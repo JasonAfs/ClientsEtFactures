@@ -20,6 +20,9 @@ public class Client
 		clients.add(this);
 		
 	}
+	public List<Facture> getFactures(){
+		return factures;
+	}
 
 	/**
 	 * Retourne le nom du client.
