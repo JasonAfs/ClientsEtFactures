@@ -96,9 +96,9 @@ public class Client
 	
 	public Facture createFacture(int montant)
 	{
-		Facture myFacture  = new Facture(montant,this,false);
-		factures.add(myFacture);
-		return myFacture;
+		// Facture myFacture  = new Facture(montant,this,false);
+		// factures.add(myFacture);
+		// return myFacture;
 	}	
 	
 	/**
