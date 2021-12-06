@@ -76,9 +76,10 @@ public class Facture
 	/**
 	 * Duplique la facture.
 	 * @return une copie de la facture.
+	 * @throws Exception
 	 */
 	
-	public Facture copie()
+	public Facture copie() throws Exception
 	{
 		Facture copieFacture = getClient().createFacture(this.getMontant(),this.estReglee());
 
