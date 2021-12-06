@@ -99,6 +99,7 @@ public class Client
 		// Facture myFacture  = new Facture(montant,this,false);
 		// factures.add(myFacture);
 		// return myFacture;
+		return null;
 	}	
 	
 	/**
