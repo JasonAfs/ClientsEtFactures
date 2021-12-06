@@ -20,16 +20,8 @@ public class Facture
 		dateFacture = LocalDate.now();
 		this.reglementFacture=reglementFacture;
 	}
-<<<<<<< HEAD
 	public Facture(int montant,Client client) throws Exception {
 		this(montant,client,false);
-=======
-	public Facture(int montant,Client client) {
-		this.client=client;
-		montantFacture=montant;
-		dateFacture = LocalDate.now();
-		reglementFacture=false;
->>>>>>> parent of 2300902 (Update Facture.java)
 	}
 	
 	public Client getClient()
