@@ -59,7 +59,7 @@ class TestFacture
 	}
 	
 	@Test
-	void testCopie()
+	void testCopie() throws Exception
 	{
 		Facture copieFactureMarcel1 = factureMarcel1.copie();
 		assertEquals(factureMarcel1.getDate(), copieFactureMarcel1.getDate());

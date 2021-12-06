@@ -75,10 +75,9 @@ public class Facture
 	 * @throws Exception
 	 */
 	
-	public Facture copie()
+	public Facture copie() throws Exception
 	{
-		Facture copieFacture = getClient().createFacture(this.getMontant(),this.estReglee());
-
+		Facture copieFacture = new Facture(this.getMontant(), this.getClient());
 		return copieFacture;
 	}
 }
