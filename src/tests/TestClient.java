@@ -61,7 +61,7 @@ class TestClient
 	}
 
 	@Test
-	void testCreateFactureReglee()
+	void testCreateFactureReglee() throws Exception
 	{
 		Facture factureReglee = marcel.createFacture(1, true),
 			factureNonReglee = marcel.createFacture(3, false);		
@@ -80,7 +80,7 @@ class TestClient
 	}
 
 	@Test
-	void testGetFacturesReglees()
+	void testGetFacturesReglees() throws Exception
 	{
 		Facture factureMarcel1 = marcel.createFacture(1, true);
 		marcel.createFacture(3, false);
