@@ -6,7 +6,6 @@ import java.util.List;
 public class Client
 {
 	private String nomClient;
-	private Facture uneFacture;
 	private List<Facture> factures=new ArrayList<>();
 	private static List<Client> clients = new ArrayList<>();
 	/** 
